@@ -1,0 +1,179 @@
+[
+    {
+        "call": true,
+        "functionName": "increaseFunds",
+        "contractName": "Burger",
+        "contractAddr": "",
+        "args": [
+            ["${SwitchFarm.address}","${SwitchPool.address}","${SwitchAcross.address}", "${SwitchVotingEscrow.address}"],
+            ["10000000000000000000000000000","10000000000000000000000000000","10000000000000000000000000000", "10000000000000000000000000000"]
+        ]
+    },
+    {
+        "call": true,
+        "functionName": "setupConfig",
+        "contractName": "SwitchTrigger",
+        "contractAddr": "",
+        "args": [
+            "${SwitchConfig.address}"
+        ]
+    },
+    {
+        "call": true,
+        "functionName": "setupConfig",
+        "contractName": "SwitchFarm",
+        "contractAddr": "",
+        "args": [
+            "${SwitchConfig.address}"
+        ]
+    },
+    {
+        "call": true,
+        "functionName": "configure",
+        "contractName": "SwitchFarm",
+        "contractAddr": "",
+        "args": [
+            "${SwitchTicketFactory.address}", "${SwitchAcross.address}"
+        ]
+    },
+    {
+        "call": true,
+        "functionName": "setupConfig",
+        "contractName": "SwitchTicketFactory",
+        "contractAddr": "",
+        "args": [
+            "${SwitchConfig.address}"
+        ]
+    },
+    {
+        "call": true,
+        "functionName": "configure",
+        "contractName": "SwitchTicketFactory",
+        "contractAddr": "",
+        "args": [
+            "${SwitchTreasury.address}",
+            false,
+            "sw",
+            "Switch "
+        ]
+    },
+    {
+        "call": true,
+        "functionName": "setupConfig",
+        "contractName": "SwitchTreasury",
+        "contractAddr": "",
+        "args": [
+            "${SwitchConfig.address}"
+        ]
+    },
+    {
+        "call": true,
+        "functionName": "applyWhites",
+        "contractName": "SwitchTreasury",
+        "contractAddr": "",
+        "args": [
+            ["${SwitchTicketFactory.address}", "${SwitchAcross.address}", "${SwitchFarm.address}"],
+            [true, true, true]
+        ]
+    },
+    {
+        "call": true,
+        "functionName": "setWhites",
+        "contractName": "SwitchTreasury",
+        "contractAddr": "",
+        "args": [
+            ["${SwitchTicketFactory.address}", "${SwitchAcross.address}", "${SwitchFarm.address}"]
+        ]
+    },
+    {
+        "call": true,
+        "functionName": "setupConfig",
+        "contractName": "SwitchAcross",
+        "contractAddr": "",
+        "args": [
+            "${SwitchConfig.address}"
+        ]
+    },
+    {
+        "call": true,
+        "functionName": "configure",
+        "contractName": "SwitchAcross",
+        "contractAddr": "",
+        "args": [
+            "${SwitchTreasury.address}", "${SwitchSigner.address}", "${SwitchTicketFactory.address}", 3, 0
+        ]
+    },
+    {
+        "call": true,
+        "functionName": "changeFeeWallet",
+        "contractName": "SwitchAcross",
+        "contractAddr": "",
+        "args": [
+            "${SwitchFarm.address}"
+        ]
+    },
+    {
+        "call": true,
+        "functionName": "setSigner",
+        "contractName": "SwitchSigner",
+        "contractAddr": "",
+        "args": [
+            "0x2d4e68cAF597d1e980b5e8684164460161f8C29b", 1
+        ]
+    },
+    {
+        "call": false,
+        "functionName": "setBaseFee",
+        "contractName": "SwitchAcross",
+        "contractAddr": "",
+        "args": [
+            "1000000000000000"
+        ]
+    },
+    {
+        "call": true,
+        "functionName": "setChainFees",
+        "contractName": "SwitchAcross",
+        "contractAddr": "",
+        "args": [
+            [42,97],
+            ["50000000000000000","1000000000000000"]
+        ]
+    },
+    {
+        "call": true,
+        "functionName": "setTokenMaps",
+        "contractName": "SwitchAcross",
+        "contractAddr": "",
+        "args": [
+            ["0xadCf42A9318D10F0D70333812F4A3Ab0622e0ef3","0xadCf42A9318D10F0D70333812F4A3Ab0622e0ef3"],
+            ["0xF2ED382e6A3439Be124813842200cf6702fD6ecA","0xF02D16a87F97428A258A48476b52Cfc105E371C1"],
+            [97,42],
+            [18,6],
+            ["10000000000000000000000000000","10000000000000000000000000000"],
+            [0,0],
+            ["100000000000000000","100000000000000000"],
+            ["10000000000000000000","10000000000000000000"],
+            ["100","100"]
+        ]
+    },
+    {
+        "call": true,
+        "functionName": "setupConfig",
+        "contractName": "SwitchVotingEscrow",
+        "contractAddr": "",
+        "args": [
+            "${SwitchConfig.address}"
+        ]
+    },
+    {
+        "call": true,
+        "functionName": "batchUpdateLockWeights",
+        "contractName": "SwitchVotingEscrow",
+        "contractAddr": "",
+        "args": [
+            [1, 4, 12, 25],
+            [100, 120, 150, 200]
+        ]
+    }
+]

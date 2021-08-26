@@ -1,0 +1,147 @@
+{
+	"WETH": {
+		"address": "0x7FcCaDD3e6A3F80e194CaDf13FeDF36B9BBbe98F",
+		"constructorArgs": [],
+		"upgradeArgs": [],
+		"upgradedAddress": "",
+		"deployed": true,
+		"upgraded": true,
+		"verified": true
+	},
+	"Burger": {
+		"address": "",
+		"constructorArgs": [],
+		"upgradeArgs": [],
+		"upgradedAddress": "",
+		"deployed": false,
+		"upgraded": false,
+		"verified": false
+	},
+	"SwitchQuery": {
+		"address": "",
+		"constructorArgs": [],
+		"upgradeArgs": [],
+		"upgradedAddress": "",
+		"deployed": false,
+		"upgraded": false,
+		"verified": false
+	},
+	"SwitchConfig": {
+		"address": "",
+		"constructorArgs": [],
+		"upgradeArgs": [],
+		"upgradedAddress": "",
+		"deployed": false,
+		"upgraded": false,
+		"verified": false
+	},
+	"SwitchTrigger": {
+		"address": "",
+		"constructorArgs": [],
+		"upgradeArgs": [],
+		"upgradedAddress": "",
+		"deployed": false,
+		"upgraded": false,
+		"verified": false
+	},
+	"SwitchTreasury": {
+		"address": "",
+		"constructorArgs": [],
+		"upgradeArgs": [
+			"${WETH.address}"
+		],
+		"upgradedAddress": "",
+		"deployed": false,
+		"upgraded": false,
+		"verified": false
+	},
+	"SwitchSigner": {
+		"address": "",
+		"constructorArgs": [],
+		"upgradeArgs": [],
+		"upgradedAddress": "",
+		"implAddress": "",
+		"deployed": false,
+		"upgraded": false,
+		"verified": false
+	},
+	"SwitchAcross": {
+		"address": "",
+		"constructorArgs": [],
+		"upgradeArgs": [
+			"${WETH.address}",
+			"${Burger.address}"
+		],
+		"upgradedAddress": "",
+		"deployed": false,
+		"upgraded": false,
+		"verified": false
+	},
+	"SwitchTicketFactory": {
+		"address": "",
+		"constructorArgs": [],
+		"upgradeArgs": [
+			"${WETH.address}"
+		],
+		"upgradedAddress": "",
+		"deployed": false,
+		"upgraded": false,
+		"verified": false
+	},
+	"SwitchFarm": {
+		"address": "",
+		"constructorArgs": [],
+		"upgradeArgs": [
+			"${SwitchTicketFactory.address}", 
+			"${SwitchAcross.address}",
+			"${Burger.address}",
+			"0xd1f461C7Ced3Bb1810B9393dB9BD2De1819fd4e5",
+			"0x67e693d320aFaE0728F2070d63bb2a96e868423B",
+			"1000000000000000000",
+			1
+		],
+		"upgradedAddress": "",
+		"deployed": false,
+		"upgraded": false,
+		"verified": false
+	},
+	"SwitchPool": {
+		"address": "",
+		"constructorArgs": [],
+		"upgradeArgs": [
+			"${Burger.address}",
+			"0xd1f461C7Ced3Bb1810B9393dB9BD2De1819fd4e5",
+			"0x67e693d320aFaE0728F2070d63bb2a96e868423B",
+			"1000000000000000000",
+			1
+		],
+		"upgradedAddress": "",
+		"deployed": false,
+		"upgraded": false,
+		"verified": false
+	},
+	"AddressWhiteList": {
+		"address": "",
+		"constructorArgs": [],
+		"upgradeArgs": [],
+		"upgradedAddress": "",
+		"deployed": false,
+		"upgraded": false,
+		"verified": false
+	},
+	"SwitchVotingEscrow": {
+		"address": "",
+		"constructorArgs": [],
+		"upgradeArgs": [
+			"${Burger.address}", 
+			"${AddressWhiteList.address}",
+			"15724800",
+			"50000000000000000",
+			"1"
+		],
+		"upgradedAddress": "",
+		"deployed": false,
+		"upgraded": false,
+		"verified": false
+	}
+}

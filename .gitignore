@@ -1,0 +1,8 @@
+node_modules
+artifacts
+cache
+config.ts
+.hardhat.*
+typechain
+build
+flatten
